@@ -1,20 +1,18 @@
 <template>
-    <div class="art-tag">
-
-        this is tag vue
-    </div>
+    <a href="/#/home" class="art-tag" :style="[tag.css]">
+        {{ tag.name }}
+    </a>
 </template>
 
 <script>
     export default {
-        name: "article-tag"
+        name: "article-tag",
+        props: ['tag'],
     }
 </script>
 
 <style type="text/scss" lang="scss" scoped>
     .art-tag{
-        width: 100%;
-        height: 350px;
-        border: solid 1px #000000;
+        color: #0000cc;
     }
 </style>

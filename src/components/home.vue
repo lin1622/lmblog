@@ -17,5 +17,7 @@
 </script>
 
 <style scoped>
-
+    .header{
+        border: solid 1px #000000;
+    }
 </style>
